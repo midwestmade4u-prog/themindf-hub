@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minute Zero</title>
+<meta name="description" content="The book behind Minute Zero: the full story of the moment it all broke.">
+<style>
+  :root{--bg:#0b0b0f;--bg2:#141419;--red:#e5322d;--red-d:#9c1c18;--white:#f2f2f2;--gray:#8a8a96;--accent:#ff6b66;--amber:#f5b942}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--white);font-family:'Segoe UI',system-ui,sans-serif;min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:0 1rem}
+  .hero{width:100%;max-width:640px;text-align:center;padding:48px 0 28px}
+  .channel-tag{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--accent);margin-bottom:18px}
+  h1{font-size:clamp(1.7rem,5vw,2.4rem);font-weight:800;line-height:1.2;margin-bottom:14px}
+  h1 span{color:var(--red)}
+  .sub{font-size:1.02rem;color:#b0b0bb;line-height:1.6;margin-bottom:8px}
+  .product{background:linear-gradient(160deg,#1e1013,#141419);border:1px solid #4a2426;border-radius:16px;padding:28px 24px;width:100%;max-width:480px;margin:0 auto 36px;text-align:center}
+  .product .kicker{font-size:.72rem;letter-spacing:3px;text-transform:uppercase;color:var(--amber);margin-bottom:12px}
+  .product h2{font-size:1.35rem;font-weight:800;line-height:1.25;margin-bottom:6px}
+  .product .author{font-size:.9rem;color:var(--gray);margin-bottom:14px}
+  .product p{font-size:.92rem;color:#d0d0d8;line-height:1.55;margin-bottom:20px}
+  .btn{display:block;width:100%;padding:15px;background:var(--amber);color:#1a1200;font-size:1.02rem;font-weight:800;border:none;border-radius:10px;text-decoration:none;cursor:pointer}
+  .btn.secondary{background:var(--red);color:#fff;margin-top:10px}
+  .btn-note{font-size:.76rem;color:#777;margin-top:10px}
+  .divider{width:100%;max-width:480px;border:none;border-top:1px solid #2a2a33;margin:0 auto 36px}
+  .books{width:100%;max-width:480px;margin:0 auto 40px}
+  .books h3{font-size:.78rem;letter-spacing:3px;text-transform:uppercase;color:var(--gray);margin-bottom:18px;text-align:center}
+  .book-item{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid #1e1e26;text-decoration:none;color:inherit}
+  .book-num{font-size:.75rem;font-weight:700;color:var(--red);width:24px;flex-shrink:0;text-align:center}
+  .book-title{font-size:.94rem;font-weight:600}
+  .book-author{font-size:.8rem;color:var(--gray)}
+  footer{width:100%;max-width:640px;text-align:center;padding:22px 0 40px;font-size:.74rem;color:#555;border-top:1px solid #1e1e26;line-height:1.7}
+  footer a{color:#777}
+</style>
+<script>
+// ?src=tiktok|fb|yt|ig swaps in a per-platform Amazon tracking ID.
+// IDs must exist in Associates Central > Manage your tracking IDs.
+document.addEventListener('DOMContentLoaded',function(){
+  var src=(new URLSearchParams(location.search).get('src')||'').toLowerCase().replace(/[^a-z]/g,'');
+  var known={tiktok:'minutezerott-20',fb:'minutezerofb-20',yt:'minutezeroyt-20',ig:'minutezeroig-20'};
+  var tag=known[src];
+  if(!tag) return;
+  document.querySelectorAll('a[href*="tag=minutezero-20"]').forEach(function(a){
+    a.href=a.href.replace('tag=minutezero-20','tag='+tag);
+  });
+});
+</script>
+</head>
+<body>
+<div class="hero">
+  <div class="channel-tag">Minute Zero</div>
+  <h1>Every empire has a <span>minute zero.</span></h1>
+  <p class="sub">The 90-second version is on the channel. This is the whole story.</p>
+</div>
+
+<div class="product">
+  <div class="kicker">The book behind the channel</div>
+  <h2>Bad Blood</h2>
+  <div class="author">John Carreyrou</div>
+  <p>How Theranos raised $700 million on a machine that never worked, who knew, and the exact moment it came apart. The best business-collapse book of the decade. Paperback, about $12.</p>
+  <a class="btn" href="https://www.amazon.com/dp/1984833634?tag=minutezero-20" target="_blank" rel="noopener sponsored">Get it on Amazon</a>
+  <a class="btn secondary" href="https://www.amazon.com/hz/audible/mlp/membership/prime?tag=minutezero-20" target="_blank" rel="noopener sponsored">Listen free with an Audible trial</a>
+  <div class="btn-note">As an Amazon Associate I earn from qualifying purchases.</div>
+</div>
+
+<hr class="divider">
+<div class="books">
+  <h3>More collapses, told in full</h3>
+  <a class="book-item" href="https://www.amazon.com/dp/1591840538?tag=minutezero-20" target="_blank" rel="noopener sponsored"><div class="book-num">01</div><div><div class="book-title">The Smartest Guys in the Room &ndash; McLean &amp; Elkind</div><div class="book-author">Enron, from the inside.</div></div></a>
+  <a class="book-item" href="https://www.amazon.com/dp/0393338827?tag=minutezero-20" target="_blank" rel="noopener sponsored"><div class="book-num">02</div><div><div class="book-title">The Big Short &ndash; Michael Lewis</div><div class="book-author">The handful who saw 2008 coming.</div></div></a>
+  <a class="book-item" href="https://www.amazon.com/dp/0061655554?tag=minutezero-20" target="_blank" rel="noopener sponsored"><div class="book-num">03</div><div><div class="book-title">Barbarians at the Gate &ndash; Burrough &amp; Helyar</div><div class="book-author">The RJR Nabisco takeover, play by play.</div></div></a>
+</div>
+
+<footer>
+  <p>As an Amazon Associate I earn from qualifying purchases.</p>
+  <p><a href="https://www.youtube.com/@TheMinuteZero" target="_blank">YouTube</a> &nbsp;&middot;&nbsp; <a href="https://www.facebook.com/profile.php?id=61590755935661" target="_blank">Facebook</a> &nbsp;&middot;&nbsp; &copy; 2026 Minute Zero</p>
+</footer>
+</body>
+</html>
