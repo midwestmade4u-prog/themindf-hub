@@ -50,7 +50,7 @@
 // Carry the platform the visitor came from (?src=tiktok|fb|yt|ig) into the
 // Amazon tracking ID so Associates reports show which platform converts.
 // Tracking IDs must exist in Associates Central > Manage your tracking IDs.
-(function(){
+document.addEventListener('DOMContentLoaded',function(){
   var src=(new URLSearchParams(location.search).get('src')||'').toLowerCase().replace(/[^a-z]/g,'');
   var known={tiktok:'themindf20tt-20',fb:'themindf20fb-20',yt:'themindf20yt-20',ig:'themindf20ig-20'};
   var tag=known[src];
@@ -58,7 +58,7 @@
   document.querySelectorAll('a[href*="tag=themindf20-20"]').forEach(function(a){
     a.href=a.href.replace('tag=themindf20-20','tag='+tag);
   });
-})();
+});
 </script>
 </head>
 <body>
